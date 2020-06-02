@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <title>HealthTrack</title>
+  <meta name="description" content="Aplicativo focado em ajudar pessoas a entrarem em forma." />
+  <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="css/bootsrap-4.5.0/bootstrap.min.css">
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+  <header class="text-center">
+    <img src="img/logo_HT_nome.png" />
+  </header>
+
+  <main role="main" class="container-fluid retangulo pt-5">
+    <form class="no-padding">
+      <div class="form-row align-items-center">
+        <div class="col-sm-12">
+          <div class="input-group mb-5">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <svg class="bi bi-envelope-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <input type="text" class="form-control" id="txtUsuario" placeholder="Usuário">
+          </div>
+        </div>
+        <div class="col-sm-12 mb-1">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <svg class="bi bi-lock-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect width="11" height="9" x="2.5" y="7" rx="2"></rect>
+                  <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"></path>
+                </svg>
+              </div>
+            </div>
+            <input type="password" class="form-control" id="txtSenha" placeholder="Senha">
+          </div>
+        </div>
+        <div class="col-sm-12 text-right mb-4">
+          <a class="text-branco font-weight-bold">Esqueceu sua senha?</a>
+        </div>
+        <div class="col-sm-12 mt-3 text-center">
+          <button type="submit">LOGIN</button>
+        </div>
+      </div>
+    </form>
+  </main>
+
+  <footer class="fixed-bottom text-center">
+    <div class="container">
+      <div class="col-sm-12 mb-3">
+        <button class="btn-facebook" href="http://www.jquery2dotnet.com" role="button">
+          <span><img class="img-facebook" src="img/logo_facebook.png" /></span>Entrar com
+          Facebook</button>
+      </div>
+      <div class="col-sm-12 mb-5">
+        <a class="text-verde font-weight-bold">Não tem uma conta? Criar</a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/bootstrap-4.5.0/bootstrap.min.js"></script>
+</body>
+
+</html>

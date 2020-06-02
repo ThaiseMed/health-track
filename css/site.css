@@ -1,0 +1,26 @@
+/* Botao Login */
+button{
+  width: 211px;
+  height: 45px;
+  background: #E6FFE6;
+  border: 1px solid #004D00;
+  box-sizing: border-box;
+  border-radius: 15px 15px 0px 15px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #004D00;
+}
+
+.text-verde{
+  color: #004D00 !important;
+}
+
+.text-branco{
+  color: #ffffff !important;
+}
+
+a{
+  cursor: pointer;
+}
