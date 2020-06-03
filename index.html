@@ -13,55 +13,36 @@
   <link rel="stylesheet" href="css/MDB-4.19.0/bootstrap.min.css">
   <link rel="stylesheet" href="css/MDB-4.19.0/mdb.min.css">
   <link rel="stylesheet" href="css/site.css">
-  <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
-  <header class="text-center">
-    <img src="img/logo_HT_nome.png" />
+  <header class="header text-center">
+    <a href="login.html"><img src="img/logo_HT_nome.png"></a>
   </header>
 
-  <main role="main" class="container-fluid retangulo pt-3">
-    <div class="row">
-      <div class="col-md-12">
-        <form>
+  <main role="main">
+    <div class="container-fluid ">
+      <div class="row">
+        <div class="col-md-12">
           <div class="md-form">
-            <i class="fas fa-user prefix"></i>
-            <input type="text" id="txtUsuario" class="form-control">
-            <label for="txtUsuario">Usuário</label>
+            <h1 class="text-verde">Resetar Senha</h1>
+            <p>Lhe enviaremos um e-mail com mais informações sobre como redefinir sua senha.</p>
+            <form>
+              <div class="md-form pb-4">
+                <i class="fas fa-envelope prefix"></i>
+                <input type="text" id="txtEmail" class="form-control">
+                <label for="txtEmail">E-mail</label>
+              </div>
+              <div class="text-center">
+                <button type="submit">Enviar E-mail</button>
+              </div>
+            </form>
           </div>
-          <div class="md-form">
-            <i class="fas fa-lock prefix"></i>
-            <input type="password" id="txtSenha" class="form-control">
-            <label for="txtSenha">Senha</label>
-          </div>
-          <div class="custom-control custom-checkbox custom-control-inline">
-            <input type="checkbox" class="custom-control-input" id="chkLembrar">
-            <label class="custom-control-label text-branco for=" chkLembrar">Lembrar-me</label>
-          </div>
-          <div class="text-right mb-5">
-            <a class="text-branco font-weight-bold" href="esqueceu-senha.html">Esqueceu sua senha?</a>
-          </div>
-          <div class="mt-3 text-center">
-            <button type="submit">LOGIN</button>
-          </div>
-        </form>
+        </div>
       </div>
     </div>
   </main>
 
-  <footer class="fixed-bottom text-center">
-    <div class="container">
-      <div class="col-sm-12 mb-3">
-        <button class="btn-facebook" href="http://www.jquery2dotnet.com" role="button">
-          <span><img class="img-facebook" src="img/logo_facebook.png" /></span>Entrar com
-          Facebook</button>
-      </div>
-      <div class="col-sm-12 mb-5">
-        <a class="text-verde font-weight-bold">Não tem uma conta? Criar</a>
-      </div>
-    </div>
-  </footer>
   <script src="js/MDB-4.19.0/jquery.min.js"></script>
   <script src="js/MDB-4.19.0/popper.min.js"></script>
   <script src="js/MDB-4.19.0/bootstrap.min.js"></script>

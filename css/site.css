@@ -37,3 +37,10 @@ a{
   line-height: 23px;
   color: #FFFFFF;
 }
+
+.md-form .prefix,
+.md-form .prefix.active,
+.md-form input,
+.md-form label{
+  color: #004D00 !important;
+}
