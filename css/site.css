@@ -1,5 +1,4 @@
-/* Botao Login */
-button{
+.btn-site{
   width: 211px;
   height: 45px;
   background: #E6FFE6;
@@ -11,6 +10,18 @@ button{
   line-height: 23px;
   text-align: center;
   color: #004D00;
+}
+
+.dropdown  button{
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  text-align: left;
+  color: #004D00;
+}
+
+.dropdown.prefix{
+  top: 0.2em;
 }
 
 .text-verde{
@@ -25,15 +36,23 @@ a{
   cursor: pointer;
 }
 
+.header-com-logo{
+  height: 7em;
+  background: rgba(0, 77, 0, 0.79);
+  mix-blend-mode: multiply;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 10px 10px;
+}
+
 .header{
-  height: 5.5em;
+  height: 2.1em;
   background: rgba(0, 77, 0, 0.79);
   mix-blend-mode: multiply;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 0px 0px 10px 10px;
   font-style: normal;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 26px;
   line-height: 23px;
   color: #FFFFFF;
 }
@@ -43,4 +62,32 @@ a{
 .md-form input,
 .md-form label{
   color: #004D00 !important;
+}
+
+.foto{
+  width: 7em;
+  height: 7em;
+  border: 1px solid #004D00;
+  box-sizing: border-box;
+}
+
+.alterar-foto{
+  width: 1.6em;
+  height: 1.6em;
+  background: #F2F2F2;
+}
+
+.badge-foto{
+  position: absolute;
+  top: 7.5em;
+  left: 7em;
+}
+
+.badge-verde{
+  background-color: #004D00;
+}
+
+.md-form .prefix ~ button{
+  width: calc(100% - 2.5rem);
+  margin-left: 2.5rem;
 }
