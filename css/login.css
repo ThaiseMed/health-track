@@ -27,10 +27,3 @@ header{
   width: 2.2em;
   margin-right: 0.7em;
 }
-
-.md-form .prefix,
-.md-form .prefix.active,
-.md-form input,
-.md-form label{
-  color: #ffffff !important;
-}

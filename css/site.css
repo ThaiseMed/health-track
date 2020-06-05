@@ -12,18 +12,6 @@
   color: #004D00;
 }
 
-.dropdown  button{
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #ced4da;
-  text-align: left;
-  color: #004D00;
-}
-
-.dropdown.prefix{
-  top: 0.2em;
-}
-
 .text-verde{
   color: #004D00 !important;
 }
@@ -57,17 +45,17 @@ a{
   color: #FFFFFF;
 }
 
-.md-form .prefix,
-.md-form .prefix.active,
-.md-form input,
-.md-form label{
-  color: #004D00 !important;
-}
-
-.foto{
+.foto-cadastro{
   width: 7em;
   height: 7em;
   border: 1px solid #004D00;
+  box-sizing: border-box;
+}
+
+.foto-perfil{
+  width: 1.5em;
+  height: 1.5em;
+  border: 1px solid #ffffff;
   box-sizing: border-box;
 }
 
@@ -85,9 +73,20 @@ a{
 
 .badge-verde{
   background-color: #004D00;
+  color: #ffffff;
 }
 
-.md-form .prefix ~ button{
-  width: calc(100% - 2.5rem);
-  margin-left: 2.5rem;
+.form-check-input {
+  margin-top: 0.4rem !important;
 }
+
+button.dropdown-toggle{
+  color: #495057;
+  background-color: #ffffff;
+  border : 1px solid #ced4da;
+}
+
+/* header img{
+  width: 1.5em;
+  height: 1.5em;
+} */

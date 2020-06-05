@@ -9,9 +9,8 @@
   <title>HealthTrack</title>
   <meta name="description" content="Aplicativo focado em ajudar pessoas a entrarem em forma." />
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-  <link rel="stylesheet" href="css/MDB-4.19.0/bootstrap.min.css">
-  <link rel="stylesheet" href="css/MDB-4.19.0/mdb.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="css/site.css">
 </head>
 
@@ -23,30 +22,41 @@
   <main role="main">
     <div class="container-fluid ">
       <div class="row">
-        <div class="col-md-12">
-          <div class="md-form">
-            <h1 class="text-verde">Resetar Senha</h1>
-            <p>Lhe enviaremos um e-mail com mais informações sobre como redefinir sua senha.</p>
-            <form>
-              <div class="md-form pb-4">
-                <i class="fas fa-envelope prefix"></i>
-                <input type="text" id="txtEmail" class="form-control">
-                <label for="txtEmail">E-mail</label>
+        <div class="col-md-12 py-4">
+          <h1 class="text-verde">Redefinir Senha</h1>
+          <p>Lhe enviaremos um e-mail com mais informações sobre como redefinir sua senha.</p>
+          <form>
+            <div class="input-group py-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon2">
+                  <svg class="bi bi-envelope-fill" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                  </svg>
+                </span>
               </div>
-              <div class="text-center">
-                <button class="btn-site" type="submit">Enviar E-mail</button>
-              </div>
-            </form>
-          </div>
+              <input type="text" class="form-control" placeholder="E-mail" aria-label="E-mail"
+                aria-describedby="basic-addon2">
+            </div>
+            <div class="text-center pt-5">
+              <button class="btn-site" type="submit">Enviar E-mail</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
   </main>
 
-  <script src="js/MDB-4.19.0/jquery.min.js"></script>
-  <script src="js/MDB-4.19.0/popper.min.js"></script>
-  <script src="js/MDB-4.19.0/bootstrap.min.js"></script>
-  <script src="js/MDB-4.19.0/mdb.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
