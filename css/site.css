@@ -59,8 +59,17 @@ a{
 .foto-perfil{
   width: 1.5em;
   height: 1.5em;
-  border: 1px solid #ffffff;
+  border-style: solid;
+  border-width: 1px;
   box-sizing: border-box;
+}
+
+.borda-branco{
+  border-color: #ffffff;
+}
+
+.borda-verde{
+  border-color:  rgba(0, 77, 0, 0.79);;
 }
 
 .alterar-foto{
@@ -147,4 +156,9 @@ button.dropdown-toggle{
   background-color: rgba(163, 194, 194, 0.95);; /* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
+}
+
+.body-menu{
+  background: #E6FFE6;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
