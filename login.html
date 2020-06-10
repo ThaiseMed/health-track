@@ -22,7 +22,7 @@
 
   <main role="main" class="retangulo pt-3">
     <div class="container-fluid">
-      <form>
+      <form class="needs-validation" novalidate>
         <div class="row">
           <div class="col-sm-12">
             <div class="input-group mt-4 mb-3">
@@ -36,7 +36,7 @@
                 </span>
               </div>
               <input type="text" class="form-control" placeholder="Usuário" aria-label="Usuário"
-                aria-describedby="basic-addon1">
+                aria-describedby="basic-addon1" required>
             </div>
           </div>
         </div>
@@ -53,7 +53,7 @@
                 </span>
               </div>
               <input type="password" class="form-control" placeholder="Senha" aria-label="Senha"
-                aria-describedby="basic-addon2">
+                aria-describedby="basic-addon2" required>
             </div>
           </div>
         </div>
@@ -104,6 +104,28 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict';
+      window.addEventListener('load', function () {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener('submit', function (event) {
+            event.preventDefault();
+            if (form.checkValidity() === false) {
+              event.stopPropagation();
+              form.classList.add('was-validated');
+            } else {
+              location.href = 'index.html';
+            }
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
 </body>
 
 </html>
