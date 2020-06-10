@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+  <title>HealthTrack</title>
+  <meta name="description" content="Aplicativo focado em ajudar pessoas a entrarem em forma." />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container-fluid pt-2">
+      <div class="d-flex justify-content-between">
+        <a href="dashboard.html" class="text-white">
+          <svg class="bi bi-house-fill" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+            <path fill-rule="evenodd"
+              d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+          </svg>
+        </a>
+        <div class="d-flex">
+          <div>
+            <svg class="bi bi-bell-fill" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+            </svg>
+            <span class="badge badge-danger badge-notificacao-header">1000</span>
+          </div>
+          <div class="foto-perfil rounded-circle">
+            <a href="menu.html"><img class="img-fluid rounded-circle" src="img/avatar-girl.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+    <div id="overlay" style="display: none;">
+      <div class="container-fluid pt-2">
+        <div class="overlay-div-principal">
+          <div class="d-flex">
+            <a href="dashboard.html" class="text-white icone-adicionar rounded-circle text-center pt-1">
+              <img class="img-fluid img-2" src="img/balance.png">
+              <p class="overlay-p text-white">MEDIDAS E PESO</p>
+            </a>
+          </div>
+          <div style="padding-bottom: 5em;" class="d-flex mb-5">
+            <a href="dashboard.html" class="text-white icone-adicionar rounded-circle text-center pt-1">
+              <img class="img-fluid img-2" src="img/alvo_pb.png">
+              <p class="overlay-p text-white">METAS</p>
+            </a>
+          </div>
+          <div class=" d-flex mb-5">
+            <a href="dashboard.html" class="text-white icone-adicionar rounded-circle text-center pt-1">
+              <img class="img-fluid img-2" src="img/exercise.png">
+              <p class="overlay-p text-white">EXERCÍCIOS</p>
+            </a>
+          </div>
+          <div style="padding-bottom: 5em;" class="d-flex mb-5">
+            <a href="dashboard.html" class="text-white icone-adicionar rounded-circle text-center pt-1">
+              <img class="img-fluid img-17" src="img/evento.png">
+              <p class="overlay-p2 text-white">EVENTO</p>
+            </a>
+          </div>
+          <div class="d-flex">
+            <a href="dashboard.html" class="text-white icone-adicionar rounded-circle text-center pt-1">
+              <img class="img-fluid img-2" src="img/food.png">
+              <p class="overlay-p text-white">DIETA</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="card card-principal my-2 mx-2">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h2 class="font-weight-bold">Metas</h2>
+        </div>
+      </div>
+      <div class="card-body" style="margin-left: -0.5em;">
+        <img src="img/alvo.png" class="float-left" style="margin-top: -2em;">
+        <div class="row font-weight-bolder" style="margin-top: -2em;">
+          <div class="d-flex justify-content-between w-100">
+            <div class="p-2 bd-highlight">75kg</div>
+            <div class="p-2 bd-highlight">65kg</div>
+          </div>
+          <div class="peso-perdido text-center text-white" style="width: 60%;">
+            <h4>60%</h4>
+          </div>
+          <div class="peso-restante" style="width: 40%;"></div>
+        </div>
+      </div>
+    </div>
+    <div class="card card-principal font-weight-bold mx-2">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h2 class="font-weight-bold">Treino</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 text-center" style="margin-top: -1em;">
+          <p class="font-weight-bold">07/06 - 13/06</p>
+        </div>
+      </div>
+      <div class="card-body" style="margin-left: -0.5em;">
+        <div style="width: 4em;" class="text-center float-left">
+          <img src="img/timer.png" style="margin-top: -3em; float: bottom; width: 4.5em;">
+          <p>330 minutos</p>
+        </div>
+        <div class="d-flex" style="margin-top: -2em; padding-left: 1em">
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="card card-principal font-weight-bold my-2 mx-2">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h2 class="font-weight-bold">Kcal</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 text-center" style="margin-top: -1em;">
+          <p class="font-weight-bold">07/06 - 13/06</p>
+        </div>
+      </div>
+      <div class="card-body" style="margin-left: -0.5em;">
+        <div style="width: 4em;" class="text-center float-left">
+          <img src="img/kcal.png" style="margin-top: -3em; float: bottom; width: 4.5em;">
+          <p>4530 kcal</p>
+        </div>
+        <div class="d-flex" style="margin-top: -2em; padding-left: 1em">
+          <canvas id="myChart2"></canvas>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="fixed-bottom footer text-center">
+    <div class="container">
+      <div class="text-white">
+        <a id="lnkAdicionar"><svg class="bi bi-plus-circle icon-plus-animated" width="2.5em" height="2.5em"
+            viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z" />
+            <path fill-rule="evenodd" d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z" />
+            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+          </svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script>
+    $(document).ready(function () {
+      $('#lnkAdicionar').on('click', function () {
+        $('#lnkAdicionar svg').toggleClass("icon-close-animated");
+        if ($('#overlay')[0].style.display == 'none') {
+          overlayOn();
+        } else {
+          overlayOff();
+        }
+
+      });
+
+      var ctx = document.getElementById('myChart').getContext('2d');
+      var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'line',
+
+        // The data for our dataset
+        data: {
+          labels: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab'],
+          datasets: [{
+            label: 'Meu Treino',
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [90, 20, 55, 35, 55, 60, 15],
+            responsive: true
+          }]
+        },
+
+        // Configuration options go here
+        options: {}
+      });
+
+      var ctx2 = document.getElementById('myChart2').getContext('2d');
+      var chart2 = new Chart(ctx2, {
+        // The type of chart we want to create
+        type: 'line',
+
+        // The data for our dataset
+        data: {
+          labels: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab'],
+          datasets: [{
+            label: 'Minhas calorias',
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [2900, 200, 400, 290, 390, 1200, 150]
+          }]
+        },
+
+        // Configuration options go here
+        options: {}
+      });
+    });
+
+    function overlayOn() {
+      $('#overlay')[0].style.display = "block";
+    }
+
+    function overlayOff() {
+      $('#overlay')[0].style.display = "none";
+    }
+  </script>
+</body>
+
+</html>

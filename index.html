@@ -12,151 +12,85 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
-  <header class="header">
-    <div class="container-fluid pt-2">
-      <div class="d-flex justify-content-between">
-        <a href="index.html" class="text-white">
-          <svg class="bi bi-house-fill" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-              d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
-            <path fill-rule="evenodd"
-              d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
-          </svg>
-        </a>
-        <div class="d-flex">
-          <div>
-            <svg class="bi bi-bell-fill" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
-            </svg>
-            <span class="badge badge-danger badge-notificacao-header">1000</span>
-          </div>
-          <div class="foto-perfil rounded-circle">
-            <a href="menu.html"><img class="img-fluid rounded-circle" src="img/avatar-girl.png"></a>
-          </div>
-        </div>
-      </div>
-    </div>
+  <header class="text-center">
+    <img src="img/logo_HT_nome.png" />
   </header>
 
-  <main role="main">
-    <div id="overlay" style="display: none;">
-      <div class="container-fluid pt-2">
-        <div class="overlay-div-principal">
-          <div class="d-flex">
-            <a href="index.html" class="text-white icone-adicionar rounded-circle text-center pt-1">
-              <img class="img-fluid img-2" src="img/balance.png">
-              <p class="overlay-p text-white">MEDIDAS E PESO</p>
-            </a>
-          </div>
-          <div style="padding-bottom: 5em;" class="d-flex mb-5">
-            <a href="index.html" class="text-white icone-adicionar rounded-circle text-center pt-1">
-              <img class="img-fluid img-2" src="img/alvo_pb.png">
-              <p class="overlay-p text-white">METAS</p>
-            </a>
-          </div>
-          <div class=" d-flex mb-5">
-            <a href="index.html" class="text-white icone-adicionar rounded-circle text-center pt-1">
-              <img class="img-fluid img-2" src="img/exercise.png">
-              <p class="overlay-p text-white">EXERCÍCIOS</p>
-            </a>
-          </div>
-          <div style="padding-bottom: 5em;" class="d-flex mb-5">
-            <a href="index.html" class="text-white icone-adicionar rounded-circle text-center pt-1">
-              <img class="img-fluid img-17" src="img/evento.png">
-              <p class="overlay-p2 text-white">EVENTO</p>
-            </a>
-          </div>
-          <div class="d-flex">
-            <a href="index.html" class="text-white icone-adicionar rounded-circle text-center pt-1">
-              <img class="img-fluid img-2" src="img/food.png">
-              <p class="overlay-p text-white">DIETA</p>
-            </a>
+  <main role="main" class="retangulo pt-3">
+    <div class="container-fluid">
+      <form class="needs-validation" novalidate>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="input-group mt-4 mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">
+                  <svg class="bi bi-person-fill" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                  </svg>
+                </span>
+              </div>
+              <input type="text" class="form-control" placeholder="Usuário" aria-label="Usuário"
+                aria-describedby="basic-addon1" required>
+            </div>
           </div>
         </div>
-      </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="input-group my-2">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon2">
+                  <svg class="bi bi-lock-fill" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="11" height="9" x="2.5" y="7" rx="2" />
+                    <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z" />
+                  </svg>
+                </span>
+              </div>
+              <input type="password" class="form-control" placeholder="Senha" aria-label="Senha"
+                aria-describedby="basic-addon2" required>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 text-white mt-2">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Lembrar-me
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 text-white text-right mb-2">
+            <a class="text-white font-weight-bold" href="esqueceu-senha.html">Esqueceu sua senha?</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 text-center mt-5">
+            <button class="btn-site" role="button" onsubmit="location.href='dashboard.html'">LOGIN</button>
+          </div>
+        </div>
     </div>
-    </div>
-
-    <div class="card card-principal my-2 mx-2">
-      <div class="row">
-        <div class="col-sm-12 text-center">
-          <h2 class="font-weight-bold">Metas</h2>
-        </div>
-      </div>
-      <div class="card-body" style="margin-left: -0.5em;">
-        <img src="img/alvo.png" class="float-left" style="margin-top: -2em;">
-        <div class="row font-weight-bolder" style="margin-top: -2em;">
-          <div class="d-flex justify-content-between w-100">
-            <div class="p-2 bd-highlight">75kg</div>
-            <div class="p-2 bd-highlight">65kg</div>
-          </div>
-          <div class="peso-perdido text-center text-white" style="width: 60%;">
-            <h4>60%</h4>
-          </div>
-          <div class="peso-restante" style="width: 40%;"></div>
-        </div>
-      </div>
-    </div>
-    <div class="card card-principal font-weight-bold mx-2">
-      <div class="row">
-        <div class="col-sm-12 text-center">
-          <h2 class="font-weight-bold">Treino</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12 text-center" style="margin-top: -1em;">
-          <p class="font-weight-bold">07/06 - 13/06</p>
-        </div>
-      </div>
-      <div class="card-body" style="margin-left: -0.5em;">
-        <div style="width: 4em;" class="text-center float-left">
-          <img src="img/timer.png" style="margin-top: -3em; float: bottom; width: 4.5em;">
-          <p>330 minutos</p>
-        </div>
-        <div class="d-flex" style="margin-top: -2em; padding-left: 1em">
-          <canvas id="myChart"></canvas>
-        </div>
-      </div>
-    </div>
-    <div class="card card-principal font-weight-bold my-2 mx-2">
-      <div class="row">
-        <div class="col-sm-12 text-center">
-          <h2 class="font-weight-bold">Kcal</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12 text-center" style="margin-top: -1em;">
-          <p class="font-weight-bold">07/06 - 13/06</p>
-        </div>
-      </div>
-      <div class="card-body" style="margin-left: -0.5em;">
-        <div style="width: 4em;" class="text-center float-left">
-          <img src="img/kcal.png" style="margin-top: -3em; float: bottom; width: 4.5em;">
-          <p>4530 kcal</p>
-        </div>
-        <div class="d-flex" style="margin-top: -2em; padding-left: 1em">
-          <canvas id="myChart2"></canvas>
-        </div>
-      </div>
-    </div>
+    </form>
   </main>
 
-  <footer class="fixed-bottom footer text-center">
+  <footer class="fixed-bottom text-center">
     <div class="container">
-      <div class="text-white">
-        <a id="lnkAdicionar"><svg class="bi bi-plus-circle icon-plus-animated" width="2.5em" height="2.5em"
-            viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-              d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z" />
-            <path fill-rule="evenodd" d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z" />
-            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-          </svg></a>
+      <div class="col-sm-12 mb-3">
+        <button class="btn-facebook" href="http://www.jquery2dotnet.com" role="button"
+          onclick="location.href='dashboard.html';">
+          <span><img class="img-facebook" src="img/logo_facebook.png" /></span>Entrar com
+          Facebook</button>
+      </div>
+      <div class="col-sm-12 mb-5">
+        <a class="text-verde font-weight-bold" href="cadastro.html">Não tem uma conta? Criar</a>
       </div>
     </div>
   </footer>
@@ -170,68 +104,24 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
   <script>
-    $(document).ready(function () {
-      $('#lnkAdicionar').on('click', function () {
-        $('#lnkAdicionar svg').toggleClass("icon-close-animated");
-        if ($('#overlay')[0].style.display == 'none') {
-          overlayOn();
-        } else {
-          overlayOff();
-        }
-
-      });
-
-      var ctx = document.getElementById('myChart').getContext('2d');
-      var chart = new Chart(ctx, {
-        // The type of chart we want to create
-        type: 'line',
-
-        // The data for our dataset
-        data: {
-          labels: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab'],
-          datasets: [{
-            label: 'Meu Treino',
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: [90, 20, 55, 35, 55, 60, 15],
-            responsive: true
-          }]
-        },
-
-        // Configuration options go here
-        options: {}
-      });
-
-      var ctx2 = document.getElementById('myChart2').getContext('2d');
-      var chart2 = new Chart(ctx2, {
-        // The type of chart we want to create
-        type: 'line',
-
-        // The data for our dataset
-        data: {
-          labels: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab'],
-          datasets: [{
-            label: 'Minhas calorias',
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: [2900, 200, 400, 290, 390, 1200, 150]
-          }]
-        },
-
-        // Configuration options go here
-        options: {}
-      });
-    });
-
-    function overlayOn() {
-      $('#overlay')[0].style.display = "block";
-    }
-
-    function overlayOff() {
-      $('#overlay')[0].style.display = "none";
-    }
+    (function () {
+      'use strict';
+      window.addEventListener('load', function () {
+        var forms = document.getElementsByClassName('needs-validation');
+        var validation = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener('submit', function (event) {
+            event.preventDefault();
+            if (form.checkValidity() === false) {
+              event.stopPropagation();
+              form.classList.add('was-validated');
+            } else {
+              location.href = 'dashboard.html';
+            }
+          }, false);
+        });
+      }, false);
+    })();
   </script>
 </body>
 
